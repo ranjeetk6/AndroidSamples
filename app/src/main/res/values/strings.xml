@@ -18,5 +18,7 @@
     <string name="beginner">beginner</string>
     <string name="baller">baller</string>
     <string name="finish">finish</string>
+    <string name="search_league">Looking for co-ed beginner league near you ...</string>
+    <string name="exercisebg">exercisebg</string>
 
 </resources>

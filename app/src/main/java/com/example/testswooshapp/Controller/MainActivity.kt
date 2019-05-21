@@ -1,8 +1,8 @@
-package com.example.testswooshapp
+package com.example.testswooshapp.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.testswooshapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -13,7 +13,7 @@ class MainActivity : BaseActivity() {
 
         getStartedbtn.setOnClickListener {
 
-            val leagueIntent = Intent(this,LeagueActivity::class.java)
+            val leagueIntent = Intent(this, LeagueActivity::class.java)
             startActivity(leagueIntent)
         }
 

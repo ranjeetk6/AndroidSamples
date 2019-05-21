@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".Controller.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-                android:id="@+id/toggleButton4"
+                android:id="@+id/begineerSkillbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -68,7 +68,7 @@
                 android:text="@string/beginner"
                 android:textColor="@android:color/white"
                 android:textOff="@string/beginner"
-                android:textOn="@string/beginner" />
+                android:textOn="@string/beginner" android:onClick="onBeginnerClicked"/>
 
         <ToggleButton
                 android:layout_width="wrap_content"
@@ -79,11 +79,11 @@
                 android:text="@string/baller"
                 android:textColor="@android:color/white"
                 android:textOff="@string/baller"
-                android:textOn="@string/baller" />
+                android:textOn="@string/baller" android:id="@+id/ballerSkillbtn" android:onClick="onBallerClicked"/>
     </LinearLayout>
 
     <Button
-            android:id="@+id/button"
+            android:id="@+id/finishSkillbtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -96,7 +96,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.6"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" android:onClick="onSkillFinishClicked"/>
 
 
 
